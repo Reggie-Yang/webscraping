@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 import pandas as pd
 import time
@@ -7,8 +8,13 @@ website = "https://www.ratemds.com/best-doctors/va/reston/?page=2"
 
 path = "/Users/lyang/Downloads/chromedriver"
 
+#headless-mode
+options = Options()
+options.headless = True
+
 service = Service(executable_path=path)
-driver = webdriver.Chrome(service=service)
+
+driver = webdriver.Chrome(service=service, options=options)
 titles = []
 specialties = []
 specialties2 = []
