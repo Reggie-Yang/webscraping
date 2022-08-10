@@ -1,0 +1,11 @@
+{
+    "folders": [
+     {
+      "path": "."
+     }
+    ],
+    "settings": {
+     "python.terminal.activateEnvInCurrentTerminal": true,
+     "python.defaultInterpreterPath": "/Users/lyang/Repos/github/webscraping/webscrap_venv/bin/python3"
+    }
+}
